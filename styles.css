@@ -1,0 +1,152 @@
+/* обнуляющие стили */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(86, 86, 86);
+}
+
+a:active {
+  color: #333333;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  color: #333333;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: Montserrat;
+  font-size: 16px;
+}
+
+/* конец обнуляющих стилей */
+
+.container {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+    padding-bottom: 3%;
+    height: 10vh;
+}
+
+.header__logo,
+.header__search,
+.header__phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px black solid;
+    text-align: center;
+    width: 100%;
+}
+
+.main__inner {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: space-between;
+    gap: 3%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px black solid;
+    text-align: center;
+    height: 20%;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px black solid;
+    text-align: center;
+    height: 100%;
+}
+
+.content {
+    height: 100%;
+}
+
+.content__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.content__category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px black solid;
+    text-align: center;
+    width: 20%;
+}
+
+.content__page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px black solid;
+    text-align: center;
+    width: 80%;
+}
+
+.footer__inner {
+    display: flex;
+    padding-top: 3%;
+    height: 10vh;
+}
+
+.footer__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px black solid;
+    width: 100%;
+    text-align: center;
+}
