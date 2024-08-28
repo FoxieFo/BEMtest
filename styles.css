@@ -1,67 +1,9 @@
-/* обнуляющие стили */
-
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-
-ul,
-ol,
-li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: inherit;
-  font-size: inherit;
-}
-
-a {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-}
-
-a:hover {
-  color: rgb(86, 86, 86);
-}
-
-a:active {
-  color: #333333;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  color: #333333;
-  font-weight: 500;
-  line-height: 24px;
-  font-family: Montserrat;
-  font-size: 16px;
-}
-
-/* конец обнуляющих стилей */
-
 .container {
     max-width: 1240px;
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .header__inner {
@@ -72,9 +14,29 @@ body {
     height: 10vh;
 }
 
-.header__logo,
+/*↓ Такой подход увеличивает связанность кода ↓*/
+
+/* .header__logo,
 .header__search,
 .header__phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px black solid;
+    text-align: center;
+    width: 100%;
+} */
+
+.mix {
+  
+    /* Микс вместо вышеуказанных
+    
+    header__logo,
+    .header__search,
+    .header__phone,
+    
+    чтобы единообразно отформатировать целый набор HTML-элементов.*/
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,14 +71,11 @@ body {
     height: 100%;
 }
 
-.content {
-    height: 100%;
-}
-
 .content__inner {
     display: flex;
     justify-content: space-between;
     gap: 5%;
+    height: 100%;
 }
 
 .content__category {
